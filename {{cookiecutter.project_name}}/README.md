@@ -14,13 +14,11 @@ The directory structure of the project looks like this:
 │   ├── processed        <- The final, canonical data sets for modeling.
 │   └── raw              <- The original, immutable data dump.
 │
-│
 ├── models               <- Trained and serialized models, model predictions, or model summaries
 │
 ├── notebooks            <- Jupyter notebooks.
 │
 ├── pyproject.toml       <- Project configuration file
-│
 │
 ├── requirements.txt     <- The requirements file for reproducing the analysis environment
 |
