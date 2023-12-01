@@ -1,6 +1,29 @@
 version: '3'
 
+silent: true
+
+vars:
+  PROJECT_NAME: { cookiecutter.repo_name }
+  PYTHON_VERSION: { cookiecutter.python_version_number }
+  PYTHON_INTERPRETER: python
+
 tasks:
   create-env:
     cmds:
-      - echo "Installing"mkd
+      - |
+        echo -e "\e[32mThis is green text\e[0m" 
+        apt update && apt upgrade -y
+        apt install -y python3-pip
+        apt install -y python3-venv
+        pip3 install virtualenv
+        echo "Provide a name for the virtual env:"
+        read VENV_NAME
+        python3 -m venv $VENV_NAME
+        source venv/bin/
+
+  requirements:
+    cmds:
+      - |
+        python3 -m pip install -U pip setuptools wheel
+        python3 -m pip install -r requirements.txt
+        python3 -m pip install -e .
