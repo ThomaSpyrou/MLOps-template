@@ -1,0 +1,6 @@
+version: '3'
+
+tasks:
+  create-env:
+    cmds:
+      - echo "Installing"mkd
