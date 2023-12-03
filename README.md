@@ -12,5 +12,5 @@ Inspired by the [cookiecutter-data-science](https://github.com/drivendata/cookie
 ## Start a new project
 
 ```bash
-cookiecutter https://github.com/SkafteNicki/mlops_template
+cookiecutter https://github.com/ThomaSpyrou/Silverfish-MLOps-template
 ```
